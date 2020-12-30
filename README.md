@@ -4,6 +4,8 @@
 
 - [C# Basics for Beginners: Learn C# Fundamentals by Coding](https://www.udemy.com/course/csharp-tutorial-for-beginners/)
 
+
+
 ## 01. Introduction to C# and .NET Framework
 
 [Visual Studio 2019 Download](https://visualstudio.microsoft.com/ko/thank-you-downloading-visual-studio/?sku=Community&rel=16)
@@ -28,14 +30,26 @@
 
         - 클래스는 attributes(속성)와 functions(함수)가 있다.
           - 자동차에는 제조사, 모델, 색과 같은 속성과 시동, 움직임과 같은 함수가 있다.
-
-      - `namespace`: 관련된 여러 개의 클래스를 묶는 컨테이너
-
+- `namespace`: 관련된 여러 개의 클래스를 묶는 컨테이너
       - `Assembly`: 관련 네임 스페이스에 대한 컨테이너
+- `Application`: 어플리케이션을 컴파일 할 때, 컴파일러는 파티션 방식에 따라 하나 이상의 어셈블리를 빌드한다. 
+  
+- [First Application Hello World](./CsharpFundamentals/HelloWorld)
 
-      - `Application`: 어플리케이션을 컴파일 할 때, 컴파일러는 파티션 방식에 따라 하나 이상의 어셈블리를 빌드한다. 
+  - 단축키
 
-        
+    | 단축키      | 기능                |
+    | ----------- | ------------------- |
+    | Ctrl + X    | 해당 줄 제거        |
+    | Alt + Enter | 불필요한 Using 제거 |
+    | Ctrl + F5   | 어플리케이션 실행   |
 
-        
+- [Download ReSharper](https://www.jetbrains.com/resharper/) (VS용 플러그인)
 
+  - 설치 후 인증하면 됨
+  - 학생용 또는 오픈 소스용 Jetbrain 계정이 있을 경우 무료
+  - 아닐 경우 30일 체험판 사용
+
+
+
+## 02. Primitive Types & Expressions
