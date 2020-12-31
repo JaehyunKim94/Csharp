@@ -53,3 +53,87 @@
 
 
 ## 02. Primitive Types & Expressions
+
+- Variables and Constants
+
+  - Variables: 메모리에 저장 위치에 부여하는 이름
+  - Constants: 변하지 않는 값
+
+  ```csharp
+  int number;					// identier
+  int Number = 1;
+  const float Pi = 3.14f;
+  ```
+
+  - number, Number, Pi를 identifier라고 한다.
+
+    - `Identifier`(식별자)
+      - 숫자로 시작 X
+      - 여백이 포함되면 안됨
+      - 예약어는 사용 불가
+      - 의미를 나타내는 이름으로 짓자
+
+  - Naming Conventions
+
+    - For local variables: camelCase
+    - For constants: PascalCase
+
+  - Primitive Types
+
+    |                                | C# Type | .NET Type | Bytes | Range                       |
+    | ------------------------------ | ------- | --------- | ----- | --------------------------- |
+    | **Integral Numbers**           | byte    | Byte      | 1     | 0 to 255                    |
+    |                                | short   | Int 16    | 2     | -32,768 to 32767            |
+    |                                | int     | Int 32    | 4     | -2.1B to 2.1B               |
+    | **Real Number**                | long    | Int 64    | 8     | ...                         |
+    |                                | float   | Single    | 4     | -3.4 x 10^38 to 3.4 x 10^38 |
+    | C# real number  기본 data type | double  | Double    | 8     | ...                         |
+    |                                | decimal | Decimal   | 16    | -7.9 x 10^28 to 7.9 x 10^28 |
+    | **Character**                  | char    | Char      | 2     | Unicode Characters          |
+    | **Boolean**                    | bool    | Boolean   | 1     | True / False                |
+
+  - Non-Primitive Types
+    - String
+    - Array
+    - Enum
+    - Class
+
+- Overflowing
+
+  - 데이터 타입의 범위를 벗어남
+
+  ```
+  byte number = 255;
+  number = number + 1;	// 0
+  ```
+
+  - `checked` 사용
+
+  ```csharp
+  checked
+  {
+  	byte number = 255;
+  	number = number + 1;
+  }	// 예외 발생
+  ```
+
+  - 실제로 많이 일어나진 않음
+
+- Scope
+
+  - 해당 블럭과 자식 블럭에는 값을 가져올 수 있지만, 스코프를 벗어날 경우 컴파일 에러가 발생한다.
+
+  ```
+  {
+  	byte a = 1;
+  	{
+  		byte b = 2;
+  		{
+  			byte c = 3;
+  		}
+  	}
+  }
+  ```
+
+  
+
