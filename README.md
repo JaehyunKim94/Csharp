@@ -38,11 +38,12 @@
 
   - 단축키
 
-    | 단축키      | 기능                |
-    | ----------- | ------------------- |
-    | Ctrl + X    | 해당 줄 제거        |
-    | Alt + Enter | 불필요한 Using 제거 |
-    | Ctrl + F5   | 어플리케이션 실행   |
+    | 단축키           | 기능                |
+    | ---------------- | ------------------- |
+    | Ctrl + X         | 해당 줄 제거        |
+    | Alt + Enter      | 불필요한 Using 제거 |
+    | Ctrl + F5        | 어플리케이션 실행   |
+    | Ctrl + Shift + B | 빌드                |
 
 - [Download ReSharper](https://www.jetbrains.com/resharper/) (VS용 플러그인)
 
@@ -135,5 +136,10 @@
   }
   ```
 
-  
 
+- Type Conversion
+  - 
+- Demo
+  - [Variables and Contants](./CsharpFundamentals/VariablesAndConstants)
+    - `cw` + `Tab` > Console.WirteLine(); 
+    - `Ctrl` + `Click` > Object Browser
