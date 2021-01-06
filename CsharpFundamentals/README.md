@@ -176,7 +176,7 @@
 
 
     - Arithmetic Operators
-
+    
       |                | Operator | Example |
       | :------------: | :------: | :-----: |
       |    **Add**     |    +     |  a + b  |
@@ -186,7 +186,7 @@
       | **Reamainder** |    %     |  a % b  |
       | **Increment**  |    ++    |   a++   |
       | **Decrement**  |    --    |   a--   |
-
+    
       ```csharp
       // Postfix Increment
       int a = 1;
@@ -196,9 +196,9 @@
       int c = 1;
       int d = ++c;		// a = 2, b = 2
       ```
-
+    
     - Comparison Operators
-
+    
       |                              | Operator | Example |
       | :--------------------------: | :------: | :-----: |
       |          **Equal**           |    ==    | a == b  |
@@ -207,9 +207,9 @@
       | **Greater than or equal to** |    >=    | a >= b  |
       |        **Less than**         |    <     |  a < b  |
       |  **Less than or equal to**   |    <=    | a <= b  |
-
+    
     - Assignment Operators
-
+    
       |                               | Operator | Example |  Same as  |
       | :---------------------------: | :------: | :-----: | :-------: |
       |        **Assignment**         |    =     |  a = 1  |           |
@@ -217,17 +217,17 @@
       |  **Subtraction assignment**   |    -=    | a -= 3  | a = a - 3 |
       | **Multiplication assignment** |    *=    | a *= 3  | a = a * 3 |
       |    **Division assignment**    |    /=    | a /= 3  | a = a / 3 |
-
+    
     - Logical Operators
-
+    
       |         | Opeartor | Example  |
       | :-----: | :------: | :------: |
       | **And** |    &&    |  a && b  |
       | **Or**  |   \|\|   | a \|\| b |
       | **Not** |    !     |    !a    |
-
+    
     - Bitwise Operators (for lower level)
-
+    
       |         | Opeartor | Example |
       | :-----: | :------: | :-----: |
       | **And** |    &     |  a & b  |

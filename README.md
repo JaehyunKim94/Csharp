@@ -2,9 +2,9 @@
 
 ## 00. Index
 
-- [C# Basics for Beginners: Learn C# Fundamentals by Coding](./CsharpFundamentals)
-  - Basics for C#
-  - [Udemy Learning Course](https://www.udemy.com/course/csharp-tutorial-for-beginners/)
+- C# Basics for Beginners: Learn C# Fundamentals by Coding
+  - [Repository](./CsharpFundamentals)
+  - [e-Learning Course](https://www.udemy.com/course/csharp-tutorial-for-beginners/)
 
 
 
@@ -20,4 +20,5 @@
    3. Scope
    4. Type Conversion
    5. Operators
-   6. [Demo](./CsharpFundamentals/Demos/Chap02)
+   6. Comments
+   7. [Demo](./CsharpFundamentals/Demos/Chap02)
