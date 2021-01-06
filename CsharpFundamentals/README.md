@@ -35,7 +35,7 @@
   - [First Application Hello World](./Demos/Chap01/HelloWorld)
   
     | 단축키           | 기능                |
-  | ---------------- | ------------------- |
+    | ---------------- | ------------------- |
     | Ctrl + X         | 해당 줄 제거        |
     | Alt + Enter      | 불필요한 Using 제거 |
     | Ctrl + F5        | 어플리케이션 실행   |
