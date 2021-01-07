@@ -95,6 +95,8 @@
     - Enum
     - Class
 
+  
+
 - Overflowing
 
   - 데이터 타입의 범위를 벗어남
@@ -116,6 +118,8 @@
 
   - 실제로 많이 일어나진 않음
 
+  
+
 - Scope
 
   - 해당 블럭과 자식 블럭에는 값을 가져올 수 있지만, 스코프를 벗어날 경우 컴파일 에러가 발생한다.
@@ -131,6 +135,8 @@
   	}
   }
   ```
+
+
 
 
 - Type Conversion
@@ -171,75 +177,85 @@
   - Convert
 
     - `ToByte()` `ToInt16()` `ToInt32()` `ToInt64()`
+    
+      
 
 - Operators
 
 
-    - Arithmetic Operators
+  - Arithmetic Operators
+
+    |                | Operator | Example |
+    | :------------: | :------: | :-----: |
+    |    **Add**     |    +     |  a + b  |
+    |  **Subtract**  |    -     |  a - b  |
+    |  **Multiply**  |    *     |  a * b  |
+    |   **Divide**   |    /     |  a / b  |
+    | **Reamainder** |    %     |  a % b  |
+    | **Increment**  |    ++    |   a++   |
+    | **Decrement**  |    --    |   a--   |
+
+    ```csharp
+    // Postfix Increment
+    int a = 1;
+    int b = a++;		// a = 2, b = 1
     
-      |                | Operator | Example |
-      | :------------: | :------: | :-----: |
-      |    **Add**     |    +     |  a + b  |
-      |  **Subtract**  |    -     |  a - b  |
-      |  **Multiply**  |    *     |  a * b  |
-      |   **Divide**   |    /     |  a / b  |
-      | **Reamainder** |    %     |  a % b  |
-      | **Increment**  |    ++    |   a++   |
-      | **Decrement**  |    --    |   a--   |
+    // Prefix Increment
+    int c = 1;
+    int d = ++c;		// a = 2, b = 2
+    ```
+
     
-      ```csharp
-      // Postfix Increment
-      int a = 1;
-      int b = a++;		// a = 2, b = 1
-      
-      // Prefix Increment
-      int c = 1;
-      int d = ++c;		// a = 2, b = 2
-      ```
+
+
+  - Comparison Operators
+
+    |                              | Operator | Example |
+    | :--------------------------: | :------: | :-----: |
+    |          **Equal**           |    ==    | a == b  |
+    |        **Not Equal**         |    !=    | a != b  |
+    |       **Greater than**       |    >     |  a > b  |
+    | **Greater than or equal to** |    >=    | a >= b  |
+    |        **Less than**         |    <     |  a < b  |
+    |  **Less than or equal to**   |    <=    | a <= b  |
+
     
-    - Comparison Operators
+
+  - Assignment Operators
+
+    |                               | Operator | Example |  Same as  |
+    | :---------------------------: | :------: | :-----: | :-------: |
+    |        **Assignment**         |    =     |  a = 1  |           |
+    |    **Addition assignment**    |    +=    | a += 3  | a = a + 3 |
+    |  **Subtraction assignment**   |    -=    | a -= 3  | a = a - 3 |
+    | **Multiplication assignment** |    *=    | a *= 3  | a = a * 3 |
+    |    **Division assignment**    |    /=    | a /= 3  | a = a / 3 |
+
     
-      |                              | Operator | Example |
-      | :--------------------------: | :------: | :-----: |
-      |          **Equal**           |    ==    | a == b  |
-      |        **Not Equal**         |    !=    | a != b  |
-      |       **Greater than**       |    >     |  a > b  |
-      | **Greater than or equal to** |    >=    | a >= b  |
-      |        **Less than**         |    <     |  a < b  |
-      |  **Less than or equal to**   |    <=    | a <= b  |
+
+  - Logical Operators
+
+    |         | Operator | Example  |
+    | :-----: | :------: | :------: |
+    | **And** |    &&    |  a && b  |
+    | **Or**  |   \|\|   | a \|\| b |
+    | **Not** |    !     |    !a    |
+
     
-    - Assignment Operators
-    
-      |                               | Operator | Example |  Same as  |
-      | :---------------------------: | :------: | :-----: | :-------: |
-      |        **Assignment**         |    =     |  a = 1  |           |
-      |    **Addition assignment**    |    +=    | a += 3  | a = a + 3 |
-      |  **Subtraction assignment**   |    -=    | a -= 3  | a = a - 3 |
-      | **Multiplication assignment** |    *=    | a *= 3  | a = a * 3 |
-      |    **Division assignment**    |    /=    | a /= 3  | a = a / 3 |
-    
-    - Logical Operators
-    
-      |         | Opeartor | Example  |
-      | :-----: | :------: | :------: |
-      | **And** |    &&    |  a && b  |
-      | **Or**  |   \|\|   | a \|\| b |
-      | **Not** |    !     |    !a    |
-    
-    - Bitwise Operators (for lower level)
-    
-      |         | Opeartor | Example |
-      | :-----: | :------: | :-----: |
-      | **And** |    &     |  a & b  |
-      | **Or**  |    \|    | a \| b  |
+
+  - Bitwise Operators (for lower level)
+
+    |         | Operator | Example |
+    | :-----: | :------: | :-----: |
+    | **And** |    &     |  a & b  |
+    | **Or**  |    \|    | a \| b  |
 
 - Comments
 
-
-  - `//` for Single Line
-  - `/* */` for multiple Lines
-  - Comment는 최소화하자! (꼭 필요한 경우에만)
-  - What 이 아닌 Why를 쓰자
+    - `//` for Single Line
+    - `/* */` for multiple Lines
+    - Comment는 최소화하자! (꼭 필요한 경우에만)
+    - What 이 아닌 Why를 쓰자
 
 
 - Demo
@@ -250,3 +266,7 @@
     - How to handle exception?
       - Use Try & Catch block
   - [Operators](./Demos/Chap02/Operators)
+
+
+
+## 03. Non-Primitive Types
