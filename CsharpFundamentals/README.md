@@ -270,3 +270,62 @@
 
 
 ## 03. Non-Primitive Types
+
+- Class
+
+  - combine related variables or fields and functions together
+
+  - Object: instance of a class
+
+    ```csharp
+    public class Person
+    {
+    	public string Name;
+        {
+            Console.WriteLine("Hi, my name is " + Name);
+        }
+        /*
+        public Add(int a, int b)
+        {
+            return a + b;
+        }
+        */
+        
+    }
+    ```
+
+    ** `public`: access modifier(액세스 한정자)로 클래스를 해당 앱의 어느곳에서라도 접근 할 수 있게 함 
+
+  - Creating Objects
+
+    ```csharp
+    int number;
+    var person = new Person();
+    person.Name = "Tommy";
+    person.Introduce();
+    ```
+
+    ** Garbage Collection: 메모리 관리의 기법으로 프로그램이 동적으로 할당했던 메모리중에서 필요 없게 된 영역을 해제하는 기능, C#은 CLR(Common Language Runtime)이 알아서 관리해준다
+
+  - Static Modifier
+
+    ```csharp
+    public class Calculator
+    {
+    	public static int Add(int a, int b)
+    	{
+    		return a + b;
+    	}
+    }
+    
+    int result = Calculator.Add(1, 2)	// static을 사용할 경우 이렇게 바로 접근 가능
+    ```
+
+    - static modifier를 사용하지 않을 경우: 계산이 필요할 때 마다 메모리 할당
+      - calc1, calc2, calc3 ... 이런식으로
+    - static modifier를 사용할 경우: 클래스를 직접 불러서 적용
+
+    
+
+    
+
