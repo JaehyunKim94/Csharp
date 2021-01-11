@@ -22,3 +22,6 @@
    5. Operators
    6. Comments
    7. [Demo](./CsharpFundamentals/Demos/Chap02)
+
+3. Non-Primitive Types
+   1. Class
